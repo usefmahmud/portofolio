@@ -1,13 +1,41 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'made tommy';
+  src: url('./assets/fonts/made-tommy/black.otf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'made tommy';
+  src: url('./assets/fonts/made-tommy/bold.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'made tommy';
+  src: url('./assets/fonts/made-tommy/light.otf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'made tommy';
+  src: url('./assets/fonts/made-tommy/thin.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'made tommy';
+  src: url('./assets/fonts/made-tommy/medium.otf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'made tommy';
+  src: url('./assets/fonts/made-tommy/regular.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'made tommy';
+  src: url('./assets/fonts/made-tommy/extrabold.otf');
+  font-weight: 900;
 }

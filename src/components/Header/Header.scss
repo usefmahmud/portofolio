@@ -1,0 +1,42 @@
+.header{
+    position: fixed;
+    z-index: 999999999999999999999999999;
+
+    top: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 50px 70px;
+
+    .logo{
+        height: 50px;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .name{
+        top: 50px;
+        position: fixed;
+        right: 70px;
+        color: #f1f1f1;
+        font-family: 'made tommy';
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+
+        span{
+            text-align: right;
+            &:first-child{
+                font-weight: 300;
+            }
+            &:last-child{
+                font-weight: 600;
+            }
+        }
+    }
+}

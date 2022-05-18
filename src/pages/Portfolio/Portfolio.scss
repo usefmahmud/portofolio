@@ -1,0 +1,154 @@
+.portfolio-page{
+    width: 100vw;
+    height: 100vh;
+    
+    .container{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-120px);
+        overflow-y: scroll;
+
+        .section{
+            display: flex;
+            align-items: center;
+            font-family: 'made tommy';
+            width: calc(100vw - (850px + 50px));
+            color: white;
+            padding: 80px 0;
+            cursor: pointer;
+
+            &.active{
+                .info{
+                    .title{
+                        color: #f1f1f1;
+                        -webkit-text-stroke: none ;
+                    }
+                    .type{
+                        opacity: 1;
+                    }
+                }
+                
+            }
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                margin-left: 130px;
+
+                .title{
+                    font-size: 50px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    color: transparent;
+                    -webkit-text-stroke: 0.7px #f1f1f1;
+                    cursor: pointer;
+                    transition: 0.15s alternative;
+                    transition-property: color, -webkit-text-strok ;
+                    text-decoration: none;
+    
+                    
+                }
+
+                .type{
+                    opacity: 0;
+                    transition: 0.4s;
+                    transition-property: opacity;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .project-number{
+        color: #f1f1f1;
+        position: fixed;
+        bottom: 50px;
+        right: 70px;
+        display: flex;
+        align-items: center;
+        color: #f1f1f1;
+
+        span{
+            height: 0.7px;
+            width: 50px;
+            background-color: #f1f1f1;
+        }
+        
+        .curr,
+        .all{
+            font-family: 'made tommy';
+            font-weight: 500;
+            margin: 0 5px;
+            
+        }
+
+        .curr{
+            position: absolute;
+            opacity: 0;
+            left: -17px;
+
+            &.active{
+                opacity: 1;
+                animation: currnumber 0.3s alternate;
+            }
+
+            @keyframes currnumber {
+                from{
+                    opacity: 0;
+                    transform: translateY(-20px);
+                }
+            }
+        }
+    }
+
+    .project-cover{
+        position: fixed;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%) translateY(22px);
+        height: 600px;
+        width: 850px;
+
+        .img{
+            position: absolute;
+            opacity: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.active{
+                opacity: 1;
+                animation: currcover 0.3s ;
+            }
+
+            @keyframes currcover {
+                from{
+                    opacity: 0;
+                    transform: scale(1.05);
+                }
+            }
+
+            .overlay{
+                height: 100%;
+                width: 100%;
+                z-index: 9999999999999999999999;
+                background-color: #000;
+                position: fixed;
+                opacity: 0.2;
+
+            }
+            img{
+                width: 100%;
+                z-index: 22;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.home-page{
+    height: 100vh;
+    width: 100vw;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 600px;
+        width: 600px;
+        z-index: 0;
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .content{
+        z-index: 222;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .social{
+            position: absolute;
+            bottom: 50px;
+            right: 70px;
+            display: flex;
+            align-items: center;
+            color: #f1f1f1;
+
+            .link{
+                color: #f1f1f1;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 40px;
+                cursor: pointer;
+                transition: 0.3s ease-in;
+
+                &:hover{
+                    color: #ffc947;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .position{
+            position: absolute;
+            bottom: 50px;
+            left: 70px;
+            color: #f1f1f1;
+            font-family: 'made tommy';
+            font-weight: 300;
+            font-size: 23px;
+        }
+
+        .nav{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateY(40px);
+            right: 25px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            height: 400px;
+
+            .link{
+                color: #f1f1f1;
+                text-decoration: none;
+                font-family: 'made tommy';
+                font-weight: 300;
+                font-size: 16px;
+                letter-spacing: 3px;
+
+                transform: rotate(90deg);
+                transition: 0.2s ease-in-out;
+
+            }
+        }
+    }
+}

@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import {useEffect, useState} from 'react'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
+import './App.scss';
+import Header from './components/Header/Header';
+
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
 
 function App() {
+
+  const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
+  useEffect(() => {
+    const moveCursor = (e) => {
+      const x = e.clientX - 16
+      const y = e.clientY - 16
+      setCursorXY({ x, y })
+    }
+    window.addEventListener('mousemove', moveCursor)
+    return () => {
+      window.removeEventListener('mousemove', moveCursor)
+    }
+  }, [])
+    
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+        <div 
+          className="cursor" 
+          style={{
+            transform: `translate3d(${cursorXY.x}px, ${cursorXY.y}px, 0)`,
+          }}
+        />
+        <Header />
+
+            <Routes>
+              <Route path='/' element={<Home />}/>
+              <Route path='/portfolio' element={<Portfolio />}/>
+            </Routes>
+
+        </Router>
     </div>
   );
 }
