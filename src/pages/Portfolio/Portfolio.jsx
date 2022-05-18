@@ -1,16 +1,26 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 import { projects } from '../../DB/projects'
 
 import './Portfolio.scss'
 const Portfolio = () => {
-    
+    //  to={`/project/${project.name.toLowerCase().replaceAll(' ', '-')}`}
+
     const [currProject, setCurrProject] = useState(0)
     const [activePorject, setActiveProject] = useState(0)
-
+    const [isOpened, setIsOpened] = useState(false)
+    const navigate = useNavigate()
+    
+    const openProject = idx => {
+        setIsOpened(true)
+        
+        setTimeout(() => {
+            navigate(`/project/${projects[idx].name.toLowerCase().replaceAll(' ', '-')}`)
+        }, 700)
+    }
     return (
         <div className='portfolio-page'>
-            <div className="project-cover">
+            <div className={`project-cover ${isOpened ? 'opened' : ''}`}>
                 {
                     projects.map((project, idx) => {
                         return (
@@ -32,11 +42,14 @@ const Portfolio = () => {
                                     setCurrProject(idx)
                                     setActiveProject(idx)
                                 }}
+                                onClick={() => {
+                                    openProject(idx)
+                                }}
                             >
                                 <div className="info">
-                                    <Link className="title" to={`/project/${project.name.toLowerCase().replaceAll(' ', '-')}`}>
+                                    <div className="title">
                                         {project.name}
-                                    </Link>
+                                    </div>
                                     <div className="type">
                                         {project.type}
                                     </div>

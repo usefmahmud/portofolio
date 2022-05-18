@@ -3,13 +3,14 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 import './App.scss';
 import Header from './components/Header/Header';
+import About from './pages/About/About';
 
 import Home from './pages/Home/Home';
 import Portfolio from './pages/Portfolio/Portfolio';
 
 function App() {
-
   const [cursorXY, setCursorXY] = useState({ x: -100, y: -100 })
+
   useEffect(() => {
     const moveCursor = (e) => {
       const x = e.clientX - 16
@@ -37,6 +38,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />}/>
               <Route path='/portfolio' element={<Portfolio />}/>
+              <Route path='/about' element={<About />}/>
             </Routes>
 
         </Router>

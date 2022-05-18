@@ -1,0 +1,100 @@
+.about-page {
+    height: 100vh;
+
+    .content {
+        z-index: 999999;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #f1f1f1;
+        font-family: 'made tommy';
+        padding-left: 70px;
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .name {
+                font-size: 70px;
+                line-height: 65px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+            }
+
+            .position {
+                font-size: 38px;
+                font-weight: 500;
+                opacity: 0.5;
+            }
+        }
+
+        .about {
+            font-size: 22px;
+            font-weight: 500;
+            max-width: 1000px;
+            line-height: 1.5;
+        }
+    }
+
+    .social {
+        position: absolute;
+        bottom: 50px;
+        right: 70px;
+        display: flex;
+        align-items: center;
+        color: #f1f1f1;
+
+        .link {
+            color: #f1f1f1;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 40px;
+            cursor: pointer;
+            transition: 0.3s ease-in;
+
+            &:hover {
+                color: #ffc947;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateY(35px);
+        right: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        height: 400px;
+
+        .link {
+            color: #f1f1f1;
+            text-decoration: none;
+            font-family: 'made tommy';
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 3px;
+
+            transform: rotate(90deg);
+            transition: 0.2s ease-in-out;
+
+        }
+    }
+
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
