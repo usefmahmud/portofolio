@@ -1,0 +1,58 @@
+.project-page {
+    width: 100vw;
+
+    .cover {
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .overlay{
+            height: 100%;
+            width: 100%;
+            z-index: 99999;
+            background-color: #000;
+            position: fixed;
+            opacity: 0.4;
+
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: 50%, 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            img{
+                width: 100%;
+                z-index: 22;
+            }
+        }
+
+        .title{
+            position: absolute;
+            font-family: 'made tommy';
+            font-size: 70px;
+            color: #f1f1f1;
+            z-index: 99999;
+            transition: 0.3s;
+            animation: fadein 0.7s;
+
+            @keyframes fadein {
+                from{
+                    transform: translateY(50px);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

@@ -16,7 +16,7 @@ const Portfolio = () => {
         
         setTimeout(() => {
             navigate(`/project/${projects[idx].name.toLowerCase().replaceAll(' ', '-')}`)
-        }, 700)
+        }, 500)
     }
     return (
         <div className='portfolio-page'>
