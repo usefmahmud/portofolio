@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { projects } from '../../DB/projects'
+import ReactDOM from 'react-dom';
 
 import './Project.scss'
 const Project = () => {
@@ -17,9 +18,9 @@ const Project = () => {
         }
     }, [projectSlug])
 
-    useLayoutEffect(() => {
-        // window.scroll(0, 0)
-    }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [projectSlug])
     return (
         <div className='project-page'>
             <div className="cover">
