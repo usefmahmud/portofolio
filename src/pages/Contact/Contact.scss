@@ -11,7 +11,16 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
         
+        .title{
+            font-family: 'made tommy';
+            font-weight: 400;
+            font-size: 30px;
+            padding: 10px 0;
+        }
+
         .social{
             position: absolute;
             bottom: 50px;

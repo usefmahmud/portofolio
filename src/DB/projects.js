@@ -66,23 +66,6 @@ export const projects = [
         ]
     },
     {
-        name: 'Yousef Mahmoud',
-        type: 'branding',
-        breif: "The Idea: I tried to make the logo as simple and modern as possible. Therefore, I relied on its design on one of the basic shapes in graphic design, which is the square. The design is inspired by the layout icon and expresses the letter Y, which is the first letter of my name",
-        cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37cd5b139345117.622e44eb51888.png',
-        images: [
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/3e87a7139345117.622e44eb4fc6a.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/9fed28139345117.622e44eb50ba0.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8f1ce4139345117.622e44eb4f0c8.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a2a511139345117.622e44eb4f6c1.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2fddcf139345117.622e44eb506b9.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/3db08b139345117.622e44eb51334.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/97a698139345117.622e44eb51e08.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/42e827139345117.622e44eb50196.png'
-        ]
-    },
-    {
         name: '36 Days Od Type',
         type: 'lettering',
         breif: "",
@@ -114,6 +97,23 @@ export const projects = [
             'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/bf96b0141106279.624da2c7bb259.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/73cf8e141106279.624da2c7b9052.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8c6ac141106279.624da2c7b85ad.png'
+        ]
+    },
+    {
+        name: 'Yousef Mahmoud',
+        type: 'branding',
+        breif: "The Idea: I tried to make the logo as simple and modern as possible. Therefore, I relied on its design on one of the basic shapes in graphic design, which is the square. The design is inspired by the layout icon and expresses the letter Y, which is the first letter of my name",
+        cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37cd5b139345117.622e44eb51888.png',
+        images: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/3e87a7139345117.622e44eb4fc6a.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/9fed28139345117.622e44eb50ba0.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/8f1ce4139345117.622e44eb4f0c8.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a2a511139345117.622e44eb4f6c1.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/37cd5b139345117.622e44eb51888.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/2fddcf139345117.622e44eb506b9.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/3db08b139345117.622e44eb51334.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/97a698139345117.622e44eb51e08.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/42e827139345117.622e44eb50196.png'
         ]
     }
 ]
