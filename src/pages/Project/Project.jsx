@@ -2,8 +2,10 @@ import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { projects } from '../../DB/projects'
 import mediumZoom from 'medium-zoom'
-import {BsArrowRightShort} from 'react-icons/bs'
+import { BsArrowRightShort } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import {GrFacebookOption, GrLinkedinOption,GrInstagram} from 'react-icons/gr'
+import {BsBehance} from 'react-icons/bs'
 
 import './Project.scss'
 const Project = () => {
@@ -55,10 +57,10 @@ const Project = () => {
                     {
                         projects[projectIdx].images.map((image, idx) => {
                             return (
-                                <div 
+                                <div
                                     className="img"
                                     id={`img-${idx}`}
-                                    
+
                                 >
                                     <img src={image} alt="" data-zoomable />
                                 </div>
@@ -68,56 +70,83 @@ const Project = () => {
                 </div>
             </div>
 
+            
+
             <div className="next-prev-project">
                 <div className="prev">
                     {
-                        projects[projectIdx-1] ?
-                        <Link
-                            className="project-card"
-                            to={`/project/${projects[projectIdx-1].name.toLowerCase().replaceAll(' ', '-')}`}
-                        >
-                            <div className="card-img">
-                                <div className="overlay"></div>
-                                <img src={projects[projectIdx-1].cover} alt="" />
-                            </div>
-                            <div className="card-title">
-                                <div className="title">
-                                    {projects[projectIdx-1].name}
+                        projects[projectIdx - 1] ?
+                            <Link
+                                className="project-card"
+                                to={`/project/${projects[projectIdx - 1].name.toLowerCase().replaceAll(' ', '-')}`}
+                            >
+                                <div className="card-img">
+                                    <div className="overlay"></div>
+                                    <img src={projects[projectIdx - 1].cover} alt="" />
                                 </div>
+                                <div className="card-title">
+                                    <div className="title">
+                                        {projects[projectIdx - 1].name}
+                                    </div>
 
-                                <div className="icon">
-                                    <BsArrowRightShort />
+                                    <div className="icon">
+                                        <BsArrowRightShort />
+                                    </div>
                                 </div>
-                            </div>
-                        </Link> :
-                        ''
+                            </Link> :
+                            ''
                     }
                 </div>
                 <div className="next">
                     {
-                        projects[projectIdx+1] ?
-                        <Link 
-                            className="project-card"
-                            to={`/project/${projects[projectIdx+1].name.toLowerCase().replaceAll(' ', '-')}`}
-                        >
-                            <div 
-                                className={`card-img`}
+                        projects[projectIdx + 1] ?
+                            <Link
+                                className="project-card"
+                                to={`/project/${projects[projectIdx + 1].name.toLowerCase().replaceAll(' ', '-')}`}
                             >
-                                <div className="overlay"></div>
-                                <img src={projects[projectIdx+1].cover} alt="" />
-                            </div>
-                            <div className="card-title">
-                                <div className="title">
-                                    {projects[projectIdx+1].name}
+                                <div
+                                    className={`card-img`}
+                                >
+                                    <div className="overlay"></div>
+                                    <img src={projects[projectIdx + 1].cover} alt="" />
                                 </div>
+                                <div className="card-title">
+                                    <div className="title">
+                                        {projects[projectIdx + 1].name}
+                                    </div>
 
-                                <div className="icon">
-                                    <BsArrowRightShort />
+                                    <div className="icon">
+                                        <BsArrowRightShort />
+                                    </div>
                                 </div>
-                            </div>
-                        </Link> :
-                        ''
+                            </Link> :
+                            ''
                     }
+                </div>
+            </div>
+
+            <div className="footer">
+
+                <div className="social">
+                    <a href="https://fb.me/usefgraphic" className="link" target='_blank'>
+                        <GrFacebookOption />
+                    </a>
+
+                    <a href="https://be.net/usefmahmud" className="link" target='_blank'>
+                        <BsBehance />
+                    </a>
+
+                    <a href="https://linkedin.com/in/usefmahmud" className="link" target='_blank'>
+                        <GrLinkedinOption />
+                    </a>
+
+                    <a href="https://instagram.com/usefmahmud0" className="link" target='_blank'>
+                        <GrInstagram />
+                    </a>
+                </div>
+
+                <div className="position">
+                    Brand Identity Designer
                 </div>
             </div>
         </div>
