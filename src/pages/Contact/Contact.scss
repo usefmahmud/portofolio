@@ -1,0 +1,135 @@
+.contact-page{
+    height: 100vh;
+    width: 100vw;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content{
+        z-index: 222;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+        .social{
+            position: absolute;
+            bottom: 50px;
+            right: 70px;
+            display: flex;
+            align-items: center;
+            color: #f1f1f1;
+
+            .link{
+                color: #f1f1f1;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 40px;
+                cursor: pointer;
+                transition: 0.3s ease-in;
+
+                &:hover{
+                    color: #ffc947;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .position{
+            position: absolute;
+            bottom: 50px;
+            left: 70px;
+            color: #f1f1f1;
+            font-family: 'made tommy';
+            font-weight: 300;
+            font-size: 23px;
+        }
+
+        .nav{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateY(35px);
+            right: 25px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+            height: 400px;
+
+            .link{
+                color: #f1f1f1;
+                text-decoration: none;
+                font-family: 'made tommy';
+                font-weight: 300;
+                font-size: 16px;
+                letter-spacing: 3px;
+
+                transform: rotate(90deg);
+                transition: 0.2s ease-in-out;
+
+            }
+        }
+
+        .contact-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            width: 100%;
+
+            .form-box{
+                padding: 10px 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input,
+                textarea{
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    font-family: 'made tommy';
+                    font-size: 20px;
+                    font-weight: 500;
+                    background-color: #f1f1f1;
+                    padding: 10px ;
+
+                    &:focus{
+                        border: none;
+                        outline: none;
+                    }
+                }
+
+                textarea{
+                    resize: none;
+                }
+
+                button{
+                    width: 50%;
+                    border: none;
+                    outline: none;
+                    font-family: 'made tommy';
+                    font-size: 18px;
+                    font-weight: 500;
+                    background-color: #f1f1f1;
+                    padding: 7px ;
+                    cursor: pointer;
+                    transition: 0.2s ease;
+                    transition-property: background-color, transform;
+
+                    &:hover{
+                        background-color: #ffc947;
+                    }
+
+                    &:active{
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+    }
+}

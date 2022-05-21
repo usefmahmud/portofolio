@@ -12,11 +12,11 @@
         justify-content: center;
 
         .overlay{
-            height: 100%;
-            width: 100%;
-            z-index: 99999;
+            height: 100vh;
+            width: 100vw;
+            z-index: 999;
             background-color: #000;
-            position: fixed;
+            position: absolute;
             opacity: 0.4;
 
         }
@@ -51,6 +51,46 @@
                 from{
                     transform: translateY(50px);
                     opacity: 0;
+                }
+            }
+        }
+    }
+
+    .content{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 220px;
+        
+        .project-description{
+            font-family: 'made tommy';
+            font-weight: 300;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.6;
+            margin: 50px 0;
+            padding: 0 100px;
+            
+        }
+
+        .project-images{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .img{
+                width: 100%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                cursor: pointer;
+
+                img{
+                    width: 100%;
                 }
             }
         }

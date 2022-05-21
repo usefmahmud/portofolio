@@ -5,6 +5,7 @@
     .container{
         position: absolute;
         width: 100%;
+        // width: calc(100vw - (850px + 50px));
         top: 50%;
         transform: translateY(-120px);
         overflow-y: scroll;
@@ -13,7 +14,7 @@
             display: flex;
             align-items: center;
             font-family: 'made tommy';
-            // width: calc(100vw - (850px + 50px));
+            width: calc(100vw - (850px + 50px));
             color: white;
             padding: 80px 0;
             cursor: pointer;
