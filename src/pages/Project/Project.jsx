@@ -2,6 +2,8 @@ import React, { useEffect, useLayoutEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { projects } from '../../DB/projects'
 import mediumZoom from 'medium-zoom'
+import {BsArrowRightShort} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 import './Project.scss'
 const Project = () => {
@@ -25,7 +27,6 @@ const Project = () => {
     useEffect(() => {
         mediumZoom('[data-zoomable]', {
             background: '#000',
-            
         })
     }, [projectSlug])
 
@@ -63,6 +64,59 @@ const Project = () => {
                                 </div>
                             )
                         })
+                    }
+                </div>
+            </div>
+
+            <div className="next-prev-project">
+                <div className="prev">
+                    {
+                        projects[projectIdx-1] ?
+                        <Link
+                            className="project-card"
+                            to={`/project/${projects[projectIdx-1].name.toLowerCase().replaceAll(' ', '-')}`}
+                        >
+                            <div className="card-img">
+                                <div className="overlay"></div>
+                                <img src={projects[projectIdx-1].cover} alt="" />
+                            </div>
+                            <div className="card-title">
+                                <div className="title">
+                                    {projects[projectIdx-1].name}
+                                </div>
+
+                                <div className="icon">
+                                    <BsArrowRightShort />
+                                </div>
+                            </div>
+                        </Link> :
+                        ''
+                    }
+                </div>
+                <div className="next">
+                    {
+                        projects[projectIdx+1] ?
+                        <Link 
+                            className="project-card"
+                            to={`/project/${projects[projectIdx+1].name.toLowerCase().replaceAll(' ', '-')}`}
+                        >
+                            <div 
+                                className={`card-img`}
+                            >
+                                <div className="overlay"></div>
+                                <img src={projects[projectIdx+1].cover} alt="" />
+                            </div>
+                            <div className="card-title">
+                                <div className="title">
+                                    {projects[projectIdx+1].name}
+                                </div>
+
+                                <div className="icon">
+                                    <BsArrowRightShort />
+                                </div>
+                            </div>
+                        </Link> :
+                        ''
                     }
                 </div>
             </div>

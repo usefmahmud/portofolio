@@ -8,13 +8,6 @@ export const projects = [
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/f2ba8b142734611.626c1be9bff20.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png'
         ],
         slug: 'yousef mahmoud branding'
     },
@@ -27,13 +20,6 @@ export const projects = [
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png'
         ],
         slug: 'yousef mahmoud branding'
     },
@@ -46,13 +32,6 @@ export const projects = [
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
             'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
-            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png'
         ],
         slug: 'yousef mahmoud branding'
     },{
@@ -62,6 +41,10 @@ export const projects = [
     },{
         name: 'LogoFolio vol.1',
         type: 'logos',
-        cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e7ed19142445145.62672c99894b0.png'
+        cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e7ed19142445145.62672c99894b0.png',
+        images: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/fs/37cd5b139345117.622e44eb51888.png',
+        ]
     }
 ]
