@@ -1,5 +1,22 @@
 export const projects = [
     {
+        name: 'SAMAA',
+        type: 'branding',
+        breif: "a travel agency That make your travel safe, fun, informative, comfortable & memorable.",
+        cover: 'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e2ab92145118699.62989d807804a.png',
+        images: [
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/6b9834145118699.62989d80773c5.gif',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/933fb9145118699.62989d80759d5.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/ceef70145118699.62989d807668e.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d50f2c145118699.6298d5db66aec.png',
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b30dc8145118699.62989d8077abf.png'
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/7ea325145118699.62989d8076c06.png'
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/b397e9145118699.62989d80753f7.png'
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/e2ab92145118699.62989d807804a.png'
+            'https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/432ee6145118699.62989d80761e3.png'
+        ]
+    },
+    {
         name: 'RWTON',
         type: 'branding',
         breif: "",
